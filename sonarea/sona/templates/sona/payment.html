@@ -1,0 +1,182 @@
+{% extends 'sona/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white">
+                    <h2 class="text-center mb-0">Options de Paiement</h2>
+                </div>
+                <div class="card-body">
+                    <div class="alert alert-info">
+                        <h4 class="alert-heading">Détails de votre commande</h4>
+                        <p>Montant total à payer : <strong>{{ total_price }}€</strong></p>
+                    </div>
+
+                    <!-- Mobile Money Section -->
+                    <div class="payment-section mb-4">
+                        <h3 class="border-bottom pb-2">Mobile Money</h3>
+                        
+                        <!-- Orange Money -->
+                        <div class="payment-option mb-3">
+                            <div class="d-flex align-items-center">
+                                <img src="{% static 'sona/images/om.jpg' %}" alt="Orange Money" class="payment-icon me-3" style="width: 50px;">
+                                <div>
+                                    <h5>Orange Money</h5>
+                                    <p class="mb-1">Numéro : <strong>+237 6XX XXX XXX</strong></p>
+                                    <a href="https://pay.lygosapp.com/link/2c2b253b-7305-4c8e-9427-f26296948509" class="btn btn-warning" target="_blank">
+                                        Payer avec Orange Money
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                      
+
+                    <!-- International Payments Section -->
+                    <div class="payment-section mb-4">
+                        <h3 class="border-bottom pb-2">Paiements Internationaux</h3>
+                        
+                        <!-- PayPal -->
+                        <div class="payment-option mb-3">
+                            <div class="d-flex align-items-center">
+                                <img src="{% static 'sona/images/paypal.png' %}" alt="PayPal" class="payment-icon me-3" style="width: 50px;">
+                                <div>
+                                    <h5>PayPal</h5>
+                                    <p class="mb-1">Paiement sécurisé via PayPal</p>
+                                    <a href="https://www.paypal.com/paypalme/sonareamusique" class="btn btn-primary" target="_blank">
+                                        Payer avec PayPal
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Stripe -->
+                        <div class="payment-option mb-3">
+                            <div class="d-flex align-items-center">
+                                <img src="{% static 'sona/images/stripe.png' %}" alt="Stripe" class="payment-icon me-3" style="width: 50px;">
+                                <div>
+                                    <h5>Stripe</h5>
+                                    <p class="mb-1">Cartes de crédit et débit</p>
+                                    <button class="btn btn-success" id="stripe-button">
+                                        Payer avec Stripe
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Instructions -->
+                    <div class="alert alert-warning">
+                        <h5>Instructions importantes :</h5>
+                        <ul class="mb-0">
+                            <li>Après le paiement, gardez une capture d'écran de la confirmation</li>
+                            <li>Envoyez la confirmation à <strong>sonareamusique@gmail.com</strong></li>
+                            <li>Votre commande sera traitée dans les 24 heures suivant la confirmation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Stripe Modal -->
+<div class="modal fade" id="stripeModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Paiement par carte</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="payment-form">
+                    <div id="card-element" class="mb-3">
+                        <!-- Stripe Card Element will be inserted here -->
+                    </div>
+                    <div id="card-errors" class="text-danger mb-3"></div>
+                    <button type="submit" class="btn btn-primary w-100">Payer {{ total_price }}€</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block extra_js %}
+<script src="https://js.stripe.com/v3/"></script>
+<script>
+    // Initialiser Stripe
+    const stripe = Stripe('votre_cle_publique_stripe');
+    const elements = stripe.elements();
+    const card = elements.create('card');
+    card.mount('#card-element');
+
+    // Gérer les erreurs de carte
+    card.addEventListener('change', function(event) {
+        const displayError = document.getElementById('card-errors');
+        if (event.error) {
+            displayError.textContent = event.error.message;
+        } else {
+            displayError.textContent = '';
+        }
+    });
+
+    // Gérer le formulaire de paiement
+    const form = document.getElementById('payment-form');
+    form.addEventListener('submit', async function(event) {
+        event.preventDefault();
+        const {token, error} = await stripe.createToken(card);
+
+        if (error) {
+            const errorElement = document.getElementById('card-errors');
+            errorElement.textContent = error.message;
+        } else {
+            // Envoyer le token à votre serveur
+            stripeTokenHandler(token);
+        }
+    });
+
+    function stripeTokenHandler(token) {
+        // Envoyer le token à votre serveur
+        fetch('/process-payment/', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-CSRFToken': getCookie('csrftoken')
+            },
+            body: JSON.stringify({
+                stripeToken: token.id,
+                amount: {{ total_price }}
+            })
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                window.location.href = '/payment-success/';
+            } else {
+                document.getElementById('card-errors').textContent = data.error;
+            }
+        });
+    }
+
+    // Fonction utilitaire pour obtenir le token CSRF
+    function getCookie(name) {
+        let cookieValue = null;
+        if (document.cookie && document.cookie !== '') {
+            const cookies = document.cookie.split(';');
+            for (let i = 0; i < cookies.length; i++) {
+                const cookie = cookies[i].trim();
+                if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                    cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                    break;
+                }
+            }
+        }
+        return cookieValue;
+    }
+</script>
+{% endblock %} 

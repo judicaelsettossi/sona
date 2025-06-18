@@ -1,0 +1,601 @@
+<!-- templates/index.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonarea - Créez votre musique en ligne</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'sona/css/styleS.css' %}">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-music"></i> SONAREA
+            </div>
+            <button class="burger-menu" id="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li><a href="#features">Fonctionnalités</a></li>
+                    <li><a href="#community">Communauté</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li class="cta">
+                        <a href="" class="premium-link">
+                            <i class="fas fa-star premium-icon"></i> Abonnement premium
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Créez. Mixez. Partagez.</h1>
+            <p>La plateforme ultime pour créer de la musique en ligne, où que vous soyez.</p>
+            <a href="#studio" class="btn-primary" id="start-now-btn">Commencer maintenant</a>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <div class="ong">
+                <h1 class="create-song-title" id="open-form-btn">Créez votre chanson</h1>
+            </div>
+            <h1 id="services">Services</h1>
+            
+            <!-- Carrousel -->
+            <div class="carousel">
+                <div class="carousel-items">
+                    <div class="carousel-item">
+                        <div class="card">
+                            <img src="{% static 'sona/images/amour.jpg' %}" class="card-img-top" alt="Amour">
+                            <div class="card-body">
+                                <h5 class="card-title">Amour</h5>
+                                <a href="#" class="btn-primary" data-choix="Amour">Créer ici</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <img src="{% static 'sona/images/evenements.jpg' %}" class="card-img-top" alt="Événements">
+                            <div class="card-body">
+                                <h5 class="card-title">Événements</h5>
+                                <a href="#" class="btn-primary" data-choix="Événements">Créer ici</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <img src="{% static 'sona/images/souvenir.jpg' %}" class="card-img-top" alt="Souvenir">
+                            <div class="card-body">
+                                <h5 class="card-title">Souvenir</h5>
+                                <a href="#" class="btn-primary" data-choix="Souvenir">Créer ici</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <img src="{% static 'sona/images/mariage.jpg' %}" class="card-img-top" alt="Mariage">
+                            <div class="card-body">
+                                <h5 class="card-title">Mariage</h5>
+                                <a href="#" class="btn-primary" data-choix="Mariage">Créer ici</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <img src="{% static 'sona/images/anniv.jpg' %}" class="card-img-top" alt="Anniversaire">
+                            <div class="card-body">
+                                <h5 class="card-title">Anniversaire</h5>
+                                <a href="#" class="btn-primary" data-choix="Anniversaire">Créer ici</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>              
+            </div>
+            
+            <!-- Styles Musicaux -->
+            <section class="music-styles">
+                <div class="section-header">
+                    <h2>Styles Musicaux</h2>
+                </div>
+                <div class="styles-grid">
+                    <div class="style-item">Pop</div>
+                    <div class="style-item">Afrobeat</div>
+                    <div class="style-item">Hip-Hop</div>
+                    <div class="style-item">Rap</div>
+                    <div class="style-item">RNB</div>
+                    <div class="style-item">Jazz</div>
+                    <div class="style-item">Rock</div>
+                    <div class="style-item">Classique</div>
+                </div>
+            </section>
+            
+            <!-- Exemples de Chansons -->
+            <section class="song-examples">
+                <div class="section-header">
+                    <h2>Exemples de Chansons</h2>
+                </div>
+                <div class="audio-grid">
+                    <div class="audio-item">
+                        <audio controls>
+                            <source src="{% static 'audio/song1.mp3' %}" type="audio/mpeg">
+                            Votre navigateur ne supporte pas l'élément audio.
+                        </audio>
+                        <p>Chanson d'amour</p>
+                    </div>
+                    <div class="audio-item">
+                        <audio controls>
+                            <source src="{% static 'audio/song2.mp3' %}" type="audio/mpeg">
+                            Votre navigateur ne supporte pas l'élément audio.
+                        </audio>
+                        <p>Chanson de mariage</p>
+                    </div>
+                    <div class="audio-item">
+                        <audio controls>
+                            <source src="{% static 'audio/song3.mp3' %}" type="audio/mpeg">
+                            Votre navigateur ne supporte pas l'élément audio.
+                        </audio>
+                        <p>Chanson d'anniversaire</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <section id="studio" class="studio-section">
+        <!-- Studio de musique en ligne -->
+    </section>
+
+    <section id="community" class="community-section">
+        <div class="container">
+            <h2>Communauté Sonarea</h2>
+            <p>Rejoignez notre communauté de musiciens et passionnés</p>
+            
+            <!-- Section Avis des Clients -->
+            <section class="avis-container" id="reviews">
+                <h2>⭐ Avis des clients</h2>
+                <p class="rating">4.81 sur 5 ★★★★★ | Basé sur {{ reviews_count }} avis</p>
+
+                <div class="barre-notes">
+                    <p>★★★★★ <span class="bar" style="width: 80%;"></span> 57</p>
+                    <p>★★★★☆ <span class="bar" style="width: 15%;"></span> 11</p>
+                    <p>★★★☆☆ <span class="bar" style="width: 5%;"></span> 1</p>
+                    <p>★★☆☆☆ <span class="bar" style="width: 0%;"></span> 0</p>
+                    <p>★☆☆☆☆ <span class="bar" style="width: 0%;"></span> 0</p>
+                </div>
+
+                <button class="btn-avis" id="open-review-form-btn">Écrire un avis</button>
+
+                <div id="review-form-container" class="hidden">
+                    <h3>Écrire un avis</h3>
+                    {% comment %} <form id="review-form" method="POST" action="{% url 'submit_review' %}"> {% endcomment %}
+                        {% csrf_token %}
+                        <label for="review-name">Votre nom :</label>
+                        <input type="text" id="review-name" name="name" placeholder="Votre nom"><br><br>
+
+                        <label for="review-rating">Note :</label>
+                        <div class="star-rating">
+                            <input type="radio" id="star5" name="rating" value="5"><label for="star5" title="5 étoiles"></label>
+                            <input type="radio" id="star4" name="rating" value="4"><label for="star4" title="4 étoiles"></label>
+                            <input type="radio" id="star3" name="rating" value="3"><label for="star3" title="3 étoiles"></label>
+                            <input type="radio" id="star2" name="rating" value="2"><label for="star2" title="2 étoiles"></label>
+                            <input type="radio" id="star1" name="rating" value="1"><label for="star1" title="1 étoile"></label>
+                        </div><br><br>
+
+                        <label for="review-text">Votre avis :</label>
+                        <textarea id="review-text" name="text" placeholder="Écrivez votre avis ici"></textarea><br><br>
+
+                        <button type="submit" class="btn-avis">Soumettre</button>
+                    </form>
+                </div>
+
+                <h3>🔽 Avis récents</h3>
+                {% for review in recent_reviews %}
+                <div class="avis">
+                    <p class="nom">{% for i in "12345" %}{% if forloop.counter <= review.rating %}⭐{% endif %}{% endfor %} <strong>{{ review.name }}</strong></p>
+                    <p class="texte">"{{ review.text }}"</p>
+                </div>
+                {% endfor %}
+            </section>
+        </div>
+    </section>
+
+    <!-- Formulaire de création de chanson -->
+    <div id="song-form-overlay" class="form-overlay hidden">
+        <div id="song-form-container" class="form-container">
+            <button id="close-form-btn" class="close-btn">×</button>
+            <h2>Créer votre chanson</h2>
+            <div class="promo-pricing">
+                <span class="promo-price">Prix promo : <span id="base-price">11,43</span>£</span>
+                <span class="original-price">39£</span>
+            </div>
+            <div class="total-price-container">
+                <span class="total-label">Total :</span>
+                <span class="total-price" id="total-price">11,43£</span>
+            </div>
+            <form id="song-form" method="POST" action="{% url 'sona:index' %}">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="occasion">Occasion</label>
+                    <input type="text" class="form-control" id="occasion" name="occasion" required>
+                </div>
+                <div class="form-group">
+                    <label for="story">Histoire</label>
+                    <textarea class="form-control" id="story" name="story" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="musical_style">Style musical</label>
+                    <select class="form-control" id="musical_style" name="musical_style" required>
+                        <option value="">Choisissez un style musical</option>
+                        <option value="Pop">Pop</option>
+                        <option value="Afrobeat">Afrobeat</option>
+                        <option value="Hip-Hop">Hip-Hop</option>
+                        <option value="Rap">Rap</option>
+                        <option value="RNB">RNB</option>
+                        <option value="Jazz">Jazz</option>
+                        <option value="Rock">Rock</option>
+                        <option value="Classique">Classique</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="voice_type">Type de voix</label>
+                    <select class="form-control" id="voice_type" name="voice_type" required>
+                        <option value="homme">Homme</option>
+                        <option value="femme">Femme</option>
+                        <option value="mixte">Mixte</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="lyrics">Paroles (optionnel)</label>
+                    <textarea class="form-control" id="lyrics" name="lyrics" rows="3"></textarea>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="express_delivery" name="express_delivery">
+                    <label class="form-check-label" for="express_delivery">
+                        Livraison express
+                        <span class="option-price">+5£</span>
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="lyrics_pdf" name="lyrics_pdf">
+                    <label class="form-check-label" for="lyrics_pdf">
+                        Paroles en PDF
+                        <span class="option-price">+5£</span>
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="lyrics_video" name="lyrics_video">
+                    <label class="form-check-label" for="lyrics_video">
+                        Vidéo avec paroles
+                        <span class="option-price">+5£</span>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Téléphone</label>
+                    <input type="tel" class="form-control" id="phone" name="phone">
+                </div>
+                <button type="submit" class="btn btn-primary">Envoyer ma demande</button>
+            </form>
+        </div>
+    </div>
+
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <h2>Questions Fréquentes</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Comment fonctionne la création de chanson personnalisée ?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Notre processus est simple : vous nous racontez votre histoire, choisissez le style musical et la voix souhaitée. Nos artistes créent ensuite une chanson unique basée sur votre récit, avec des paroles personnalisées et une mélodie adaptée à votre histoire.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Quel est le délai de livraison ?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Le délai standard est de 48 à 72 heures. Nous proposons également une option de livraison express en 12 heures pour les commandes urgentes.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Puis-je modifier la chanson après réception ?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oui, nous offrons une révision gratuite dans les 7 jours suivant la livraison. Vous pouvez demander des ajustements sur les paroles, la mélodie ou la production.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Quels sont les styles musicaux disponibles ?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nous proposons une large gamme de styles : Pop, Afrobeat, Hip-Hop, Rap, RNB, Jazz, Rock et Classique. Vous pouvez également laisser nos artistes choisir le style qui correspond le mieux à votre histoire.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Comment puis-je payer ma commande ?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nous acceptons les cartes de crédit (Visa, Mastercard, American Express), PayPal et les virements bancaires. Le paiement est sécurisé et crypté.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>À propos de Sonarea</h3>
+                    <p>Sonarea est votre plateforme de création musicale personnalisée. Nous transformons vos histoires en mélodies uniques.</p>
+                    <div class="contact">
+                        <p><i class="fas fa-phone"></i> +33 1 23 45 67 89</p>
+                        <p><i class="fas fa-envelope"></i> contact@sonarea.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Rue de la Musique, 75000 Paris</p>
+                    </div>
+                </div>
+
+                <div class="footer-section links">
+                    <h3>Liens Rapides</h3>
+                    <ul>
+                        <li><a href="#features">Fonctionnalités</a></li>
+                        <li><a href="#studio">Studio</a></li>
+                        <li><a href="#community">Communauté</a></li>
+                        <li><a href="#pricing">Tarifs</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                        <li><a href="#">Politique de confidentialité</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section social">
+                    <h3>Suivez-nous</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                    <div class="newsletter">
+                        <h4>Newsletter</h4>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Votre email">
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sonarea. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Sélection des éléments
+            const startNowBtn = document.getElementById('start-now-btn');
+            const openFormBtn = document.getElementById('open-form-btn');
+            const formOverlay = document.getElementById('song-form-overlay');
+            const closeFormBtn = document.getElementById('close-form-btn');
+            const songForm = document.getElementById('song-form');
+
+            // Fonction pour ouvrir le formulaire
+            function openForm(occasion = '') {
+                formOverlay.classList.remove('hidden');
+                formOverlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+                if (occasion) {
+                    document.getElementById('occasion').value = occasion;
+                }
+            }
+
+            // Fonction pour fermer le formulaire
+            function closeForm() {
+                formOverlay.classList.remove('active');
+                setTimeout(() => {
+                    formOverlay.classList.add('hidden');
+                }, 300);
+                document.body.style.overflow = 'auto';
+                songForm.reset();
+            }
+
+            // Événements pour ouvrir le formulaire
+            if (startNowBtn) {
+                startNowBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    openForm();
+                });
+            }
+
+            if (openFormBtn) {
+                openFormBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    openForm();
+                });
+            }
+
+            // Événements pour fermer le formulaire
+            if (closeFormBtn) {
+                closeFormBtn.addEventListener('click', closeForm);
+            }
+
+            // Fermer en cliquant en dehors du formulaire
+            formOverlay.addEventListener('click', function(e) {
+                if (e.target === formOverlay) {
+                    closeForm();
+                }
+            });
+
+            // Gestion des boutons de création par occasion
+            document.querySelectorAll('[data-choix]').forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const occasion = this.getAttribute('data-choix');
+                    openForm(occasion);
+                });
+            });
+
+            // Gestion de la FAQ
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                
+                question.addEventListener('click', () => {
+                    // Fermer toutes les autres questions
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    
+                    // Basculer l'état de la question cliquée
+                    item.classList.toggle('active');
+                });
+            });
+
+            // Animation au scroll pour la FAQ
+            const observerOptions = {
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            faqItems.forEach(item => {
+                observer.observe(item);
+            });
+
+            // Calcul du total
+            function updateTotal() {
+                const basePrice = 11.43;
+                let total = basePrice;
+                
+                // Vérifier chaque option
+                if (document.getElementById('express_delivery').checked) total += 5;
+                if (document.getElementById('lyrics_pdf').checked) total += 5;
+                if (document.getElementById('lyrics_video').checked) total += 5;
+                
+                // Mettre à jour l'affichage
+                document.getElementById('total-price').textContent = total.toFixed(2) + '£';
+            }
+
+            // Ajouter les écouteurs d'événements pour les checkboxes
+            document.getElementById('express_delivery').addEventListener('change', updateTotal);
+            document.getElementById('lyrics_pdf').addEventListener('change', updateTotal);
+            document.getElementById('lyrics_video').addEventListener('change', updateTotal);
+        });
+         // Gestion du formulaire d'avis
+         document.addEventListener('DOMContentLoaded', function() {
+            const openReviewBtn = document.getElementById('open-review-form-btn');
+            const reviewFormContainer = document.getElementById('review-form-container');
+            const reviewForm = document.getElementById('review-form');
+
+            // Afficher le formulaire d'avis
+            openReviewBtn.addEventListener('click', function() {
+                reviewFormContainer.classList.toggle('hidden');
+            });
+
+            // Gestion du menu burger
+            const burgerMenu = document.getElementById('burger-menu');
+            const mainNav = document.getElementById('main-nav');
+            const navLinks = mainNav.querySelectorAll('a');
+
+            burgerMenu.addEventListener('click', function() {
+                burgerMenu.classList.toggle('active');
+                mainNav.classList.toggle('active');
+                document.body.classList.toggle('menu-open');
+            });
+
+            // Fermer le menu quand on clique sur un lien
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    burgerMenu.classList.remove('active');
+                    mainNav.classList.remove('active');
+                    document.body.classList.remove('menu-open');
+                });
+            });
+
+            // Fermer le menu quand on clique en dehors
+            document.addEventListener('click', function(e) {
+                if (!mainNav.contains(e.target) && !burgerMenu.contains(e.target)) {
+                    burgerMenu.classList.remove('active');
+                    mainNav.classList.remove('active');
+                    document.body.classList.remove('menu-open');
+                }
+            });
+        });
+    </script>
+    <script src="{% static 'js/app.js' %}"></script>
+
+    <style>
+    /* Style pour le conteneur du total */
+    .total-price-container {
+        text-align: center;
+        margin: 1rem 0;
+        padding: 1rem;
+        background: linear-gradient(145deg, #f8f9fa, #fff);
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .total-label {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: var(--primary-color);
+        margin-right: 0.5rem;
+    }
+
+    .total-price {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: var(--secondary-color);
+    }
+
+    /* Animation pour le changement de prix */
+    @keyframes priceUpdate {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+        100% { transform: scale(1); }
+    }
+
+    .total-price.updated {
+        animation: priceUpdate 0.3s ease-in-out;
+    }
+    </style>
+</body>
+</html>

@@ -1,0 +1,2170 @@
+Watching for file changes with StatReloader
+C:\Users\MORIA\Desktop\sona\sonarea\sonarea\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\MORIA\Desktop\sona\sonarea\sona\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\MORIA\Desktop\sona\sonarea\sona\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\MORIA\Desktop\sona\sonarea\sona\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\MORIA\Desktop\sona\sonarea\sona\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\MORIA\Desktop\sona\sonarea\sona\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\views.py", line 55, in index
+    return render(request, 'index.html')
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: index.html
+C:\Users\MORIA\Desktop\sona\sonarea\sona\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\MORIA\Desktop\sona\sonarea\sona\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\MORIA\Desktop\sona\sonarea\sonarea\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\MORIA\Desktop\sona\sonarea\sona\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\MORIA\Desktop\sona\sonarea\sona\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\MORIA\Desktop\sona\sonarea\sonarea\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\MORIA\Desktop\sona\sonarea\sonarea\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\MORIA\Desktop\sona\sonarea\sonarea\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\MORIA\Desktop\sona\sonarea\sonarea\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\MORIA\Desktop\sona\sonarea\sona\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\MORIA\Desktop\sona\sonarea\sonarea\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\MORIA\Desktop\sona\sonarea\sona\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: c sd
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: c sd
+Configuration de l'envoi d'email à l'administrateur
+Configuration de l'envoi d'email à l'administrateur
+Erreur lors de l'envoi des emails: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Basic Constraints of CA cert not marked critical (_ssl.c:1028)
+Traceback (most recent call last):
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\views.py", line 82, in index
+    send_mail(
+    ~~~~~~~~~^
+        f'NOUVELLE COMMANDE SONAREA - {occasion}',
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        fail_silently=False,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\__init__.py", line 92, in send_mail
+    return mail.send()
+           ~~~~~~~~~^^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\message.py", line 307, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\backends\smtp.py", line 128, in send_messages
+    new_conn_created = self.open()
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\backends\smtp.py", line 86, in open
+    self.connection = self.connection_class(
+                      ~~~~~~~~~~~~~~~~~~~~~^
+        self.host, self.port, **connection_params
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 1022, in __init__
+    SMTP.__init__(self, host, port, local_hostname, timeout,
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  source_address)
+                  ^^^^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+                ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 1029, in _get_socket
+    new_socket = self.context.wrap_socket(new_socket,
+                                          server_hostname=self._host)
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sock=sock,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        session=session
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1076, in _create
+    self.do_handshake()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1372, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Basic Constraints of CA cert not marked critical (_ssl.c:1028)
+Erreur lors de l'envoi des emails: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Basic Constraints of CA cert not marked critical (_ssl.c:1028)
+Traceback (most recent call last):
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\views.py", line 82, in index
+    send_mail(
+    ~~~~~~~~~^
+        f'NOUVELLE COMMANDE SONAREA - {occasion}',
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        fail_silently=False,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\__init__.py", line 92, in send_mail
+    return mail.send()
+           ~~~~~~~~~^^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\message.py", line 307, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\backends\smtp.py", line 128, in send_messages
+    new_conn_created = self.open()
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\backends\smtp.py", line 86, in open
+    self.connection = self.connection_class(
+                      ~~~~~~~~~~~~~~~~~~~~~^
+        self.host, self.port, **connection_params
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 1022, in __init__
+    SMTP.__init__(self, host, port, local_hostname, timeout,
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  source_address)
+                  ^^^^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+                ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 1029, in _get_socket
+    new_socket = self.context.wrap_socket(new_socket,
+                                          server_hostname=self._host)
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sock=sock,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        session=session
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1076, in _create
+    self.do_handshake()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1372, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Basic Constraints of CA cert not marked critical (_ssl.c:1028)
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: c sd
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: c sd
+Configuration de l'envoi d'email à l'administrateur
+Configuration de l'envoi d'email à l'administrateur
+Erreur lors de l'envoi des emails: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Basic Constraints of CA cert not marked critical (_ssl.c:1028)
+Traceback (most recent call last):
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\views.py", line 82, in index
+    send_mail(
+    ~~~~~~~~~^
+        f'NOUVELLE COMMANDE SONAREA - {occasion}',
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        fail_silently=False,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\__init__.py", line 92, in send_mail
+    return mail.send()
+           ~~~~~~~~~^^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\message.py", line 307, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\backends\smtp.py", line 128, in send_messages
+    new_conn_created = self.open()
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\backends\smtp.py", line 86, in open
+    self.connection = self.connection_class(
+                      ~~~~~~~~~~~~~~~~~~~~~^
+        self.host, self.port, **connection_params
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 1022, in __init__
+    SMTP.__init__(self, host, port, local_hostname, timeout,
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  source_address)
+                  ^^^^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+                ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 1029, in _get_socket
+    new_socket = self.context.wrap_socket(new_socket,
+                                          server_hostname=self._host)
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sock=sock,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        session=session
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1076, in _create
+    self.do_handshake()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1372, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Basic Constraints of CA cert not marked critical (_ssl.c:1028)
+Erreur lors de l'envoi des emails: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Basic Constraints of CA cert not marked critical (_ssl.c:1028)
+Traceback (most recent call last):
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\views.py", line 82, in index
+    send_mail(
+    ~~~~~~~~~^
+        f'NOUVELLE COMMANDE SONAREA - {occasion}',
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        fail_silently=False,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\__init__.py", line 92, in send_mail
+    return mail.send()
+           ~~~~~~~~~^^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\message.py", line 307, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\backends\smtp.py", line 128, in send_messages
+    new_conn_created = self.open()
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\backends\smtp.py", line 86, in open
+    self.connection = self.connection_class(
+                      ~~~~~~~~~~~~~~~~~~~~~^
+        self.host, self.port, **connection_params
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 1022, in __init__
+    SMTP.__init__(self, host, port, local_hostname, timeout,
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  source_address)
+                  ^^^^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+                ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 1029, in _get_socket
+    new_socket = self.context.wrap_socket(new_socket,
+                                          server_hostname=self._host)
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sock=sock,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        session=session
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1076, in _create
+    self.do_handshake()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1372, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Basic Constraints of CA cert not marked critical (_ssl.c:1028)
+Not Found: /favicon.ico
+C:\Users\MORIA\Desktop\sona\sonarea\sonarea\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\MORIA\Desktop\sona\sonarea\sonarea\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: jbj
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: jbj
+Configuration de l'envoi d'email à l'administrateur
+Configuration de l'envoi d'email à l'administrateur
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: jbj
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: jbj
+Configuration de l'envoi d'email à l'administrateur
+Configuration de l'envoi d'email à l'administrateur
+Email administrateur envoyé avec succès
+Email administrateur envoyé avec succès
+Tentative d'envoi de l'email de confirmation au client: stevanngwa@gmail.com
+Tentative d'envoi de l'email de confirmation au client: stevanngwa@gmail.com
+Email client envoyé avec succès
+Email client envoyé avec succès
+Email administrateur envoyé avec succès
+Email administrateur envoyé avec succès
+Tentative d'envoi de l'email de confirmation au client: stevanngwa@gmail.com
+Tentative d'envoi de l'email de confirmation au client: stevanngwa@gmail.com
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: jbj
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: jbj
+Configuration de l'envoi d'email à l'administrateur
+Configuration de l'envoi d'email à l'administrateur
+Email client envoyé avec succès
+Email client envoyé avec succès
+Email administrateur envoyé avec succès
+Email administrateur envoyé avec succès
+Tentative d'envoi de l'email de confirmation au client: stevanngwa@gmail.com
+Tentative d'envoi de l'email de confirmation au client: stevanngwa@gmail.com
+Email client envoyé avec succès
+Email client envoyé avec succès
+C:\Users\MORIA\Desktop\sona\sonarea\sona\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\MORIA\Desktop\sona\sonarea\sona\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: jbsj
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: jbsj
+Envoi de l'email de commande à sonareamusique@gmail.com
+Envoi de l'email de commande à sonareamusique@gmail.com
+Email de commande envoyé avec succès
+Email de commande envoyé avec succès
+Envoi de l'email de confirmation au client: stevanngwa@gmail.com
+Envoi de l'email de confirmation au client: stevanngwa@gmail.com
+Email de confirmation envoyé avec succès
+Email de confirmation envoyé avec succès
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: jbsj
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: jbsj
+Envoi de l'email de commande à sonareamusique@gmail.com
+Envoi de l'email de commande à sonareamusique@gmail.com
+Email de commande envoyé avec succès
+Email de commande envoyé avec succès
+Envoi de l'email de confirmation au client: stevanomarion@gmail.com
+Envoi de l'email de confirmation au client: stevanomarion@gmail.com
+Email de confirmation envoyé avec succès
+Email de confirmation envoyé avec succès
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: anniversaire
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: anniversaire
+Envoi de l'email de commande à sonareamusique@gmail.com
+Envoi de l'email de commande à sonareamusique@gmail.com
+Email de commande envoyé avec succès
+Email de commande envoyé avec succès
+Envoi de l'email de confirmation au client: stevanomarion@gmail.com
+Envoi de l'email de confirmation au client: stevanomarion@gmail.com
+Email de confirmation envoyé avec succès
+Email de confirmation envoyé avec succès
+C:\Users\MORIA\Desktop\sona\sonarea\sona\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\MORIA\Desktop\sona\sonarea\sona\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\MORIA\Desktop\sona\sonarea\sona\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\MORIA\Desktop\sona\sonarea\sona\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\MORIA\Desktop\sona\sonarea\sona\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        template_name,
+        ^^^^^^^^^^^^^^
+        skip=history,
+        ^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: sona/base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\views.py", line 185, in payment
+    return render(request, 'sona/payment.html', context)
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\template\backends\django.py", line 109, in render
+    reraise(exc, self.backend)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\template\backends\django.py", line 130, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: sona/base.html
+C:\Users\MORIA\Desktop\sona\sonarea\sona\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        template_name,
+        ^^^^^^^^^^^^^^
+        skip=history,
+        ^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: sona/base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\views.py", line 185, in payment
+    return render(request, 'sona/payment.html', context)
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\template\backends\django.py", line 109, in render
+    reraise(exc, self.backend)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\template\backends\django.py", line 130, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: sona/base.html
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\MORIA\Desktop\sona\sonarea\sona\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\MORIA\Desktop\sona\sonarea\sona\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\MORIA\Desktop\sona\sonarea\sona\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /favicon.ico
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: hvhxwvs
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: hvhxwvs
+Envoi de l'email de commande à sonareamusique@gmail.com
+Envoi de l'email de commande à sonareamusique@gmail.com
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: hvhxwvs
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: hvhxwvs
+Envoi de l'email de commande à sonareamusique@gmail.com
+Envoi de l'email de commande à sonareamusique@gmail.com
+Email de commande envoyé avec succès
+Email de commande envoyé avec succès
+Envoi de l'email de confirmation au client: stevanngwa@gmail.com
+Envoi de l'email de confirmation au client: stevanngwa@gmail.com
+Email de commande envoyé avec succès
+Email de commande envoyé avec succès
+Envoi de l'email de confirmation au client: stevanngwa@gmail.com
+Envoi de l'email de confirmation au client: stevanngwa@gmail.com
+Email de confirmation envoyé avec succès
+Email de confirmation envoyé avec succès
+Email de confirmation envoyé avec succès
+Email de confirmation envoyé avec succès
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: sain
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: sain
+Envoi de l'email de commande à sonareamusique@gmail.com
+Envoi de l'email de commande à sonareamusique@gmail.com
+Email de commande envoyé avec succès
+Email de commande envoyé avec succès
+Envoi de l'email de confirmation au client: stevanngwa@gmail.com
+Envoi de l'email de confirmation au client: stevanngwa@gmail.com
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: sain
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: sain
+Envoi de l'email de commande à sonareamusique@gmail.com
+Envoi de l'email de commande à sonareamusique@gmail.com
+Email de commande envoyé avec succès
+Email de commande envoyé avec succès
+Envoi de l'email de confirmation au client: stevanngwa@gmail.com
+Envoi de l'email de confirmation au client: stevanngwa@gmail.com
+Email de confirmation envoyé avec succès
+Email de confirmation envoyé avec succès
+Email de confirmation envoyé avec succès
+Email de confirmation envoyé avec succès
+Watching for file changes with StatReloader
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: mariage
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: mariage
+Envoi de l'email de commande à sonareamusique@gmail.com
+Envoi de l'email de commande à sonareamusique@gmail.com
+Email de commande envoyé avec succès
+Email de commande envoyé avec succès
+Envoi de l'email de confirmation au client: ariontech24@gmail.com
+Envoi de l'email de confirmation au client: ariontech24@gmail.com
+Email de confirmation envoyé avec succès
+Email de confirmation envoyé avec succès
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Watching for file changes with StatReloader
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: junior
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: junior
+Envoi de l'email de commande à sonareamusique@gmail.com
+Envoi de l'email de commande à sonareamusique@gmail.com
+Email de commande envoyé avec succès
+Email de commande envoyé avec succès
+Envoi de l'email de confirmation au client: stevanngwa@gmail.com
+Envoi de l'email de confirmation au client: stevanngwa@gmail.com
+Email de confirmation envoyé avec succès
+Email de confirmation envoyé avec succès
+Watching for file changes with StatReloader
+Not Found: /favicon.ico
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: mariage
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: mariage
+Envoi de l'email de commande à sonareamusique@gmail.com
+Envoi de l'email de commande à sonareamusique@gmail.com
+Email de commande envoyé avec succès
+Email de commande envoyé avec succès
+Envoi de l'email de confirmation au client: ariontech24@gmail.com
+Envoi de l'email de confirmation au client: ariontech24@gmail.com
+Email de confirmation envoyé avec succès
+Email de confirmation envoyé avec succès
+Watching for file changes with StatReloader
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: mariage
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: mariage
+Envoi de l'email de commande à sonareamusique@gmail.com
+Envoi de l'email de commande à sonareamusique@gmail.com
+Email de commande envoyé avec succès
+Email de commande envoyé avec succès
+Envoi de l'email de confirmation au client: ariontech24@gmail.com
+Envoi de l'email de confirmation au client: ariontech24@gmail.com
+Email de confirmation envoyé avec succès
+Email de confirmation envoyé avec succès
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: ;xxssd
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: ;xxssd
+Envoi de l'email de commande à sonareamusique@gmail.com
+Envoi de l'email de commande à sonareamusique@gmail.com
+Email de commande envoyé avec succès
+Email de commande envoyé avec succès
+Envoi de l'email de confirmation au client: ariontech24@gmail.com
+Envoi de l'email de confirmation au client: ariontech24@gmail.com
+Email de confirmation envoyé avec succès
+Email de confirmation envoyé avec succès
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: mariage
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: mariage
+Envoi de l'email de commande à sonareamusique@gmail.com
+Envoi de l'email de commande à sonareamusique@gmail.com
+Email de commande envoyé avec succès
+Email de commande envoyé avec succès
+Envoi de l'email de confirmation au client: stevanngwa@gmail.com
+Envoi de l'email de confirmation au client: stevanngwa@gmail.com
+Email de confirmation envoyé avec succès
+Email de confirmation envoyé avec succès
+C:\Users\MORIA\Desktop\sona\sonarea\sona\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\MORIA\Desktop\sona\sonarea\sona\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: mariage
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: mariage
+Envoi de l'email de commande à sonareamusique@gmail.com
+Envoi de l'email de commande à sonareamusique@gmail.com
+Email de commande envoyé avec succès
+Email de commande envoyé avec succès
+Envoi de l'email de confirmation au client: naomieelisa23@gmail.com
+Envoi de l'email de confirmation au client: naomieelisa23@gmail.com
+Email de confirmation envoyé avec succès
+Email de confirmation envoyé avec succès
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /favicon.ico
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: Souvenir
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: Souvenir
+Envoi de l'email de commande à sonareamusique@gmail.com
+Envoi de l'email de commande à sonareamusique@gmail.com
+Erreur lors de l'envoi des emails: [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Traceback (most recent call last):
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\views.py", line 90, in index
+    send_mail(
+    ~~~~~~~~~^
+        f'NOUVELLE COMMANDE SONAREA - {occasion}',
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        fail_silently=False,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\__init__.py", line 92, in send_mail
+    return mail.send()
+           ~~~~~~~~~^^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\message.py", line 307, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\backends\smtp.py", line 128, in send_messages
+    new_conn_created = self.open()
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\backends.py", line 26, in open
+    self.connection = connection_class(
+                      ~~~~~~~~~~~~~~~~^
+        self.host, self.port, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 1022, in __init__
+    SMTP.__init__(self, host, port, local_hostname, timeout,
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  source_address)
+                  ^^^^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+                ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 1029, in _get_socket
+    new_socket = self.context.wrap_socket(new_socket,
+                                          server_hostname=self._host)
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sock=sock,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        session=session
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1076, in _create
+    self.do_handshake()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1372, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ConnectionResetError: [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Erreur lors de l'envoi des emails: [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Traceback (most recent call last):
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\views.py", line 90, in index
+    send_mail(
+    ~~~~~~~~~^
+        f'NOUVELLE COMMANDE SONAREA - {occasion}',
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        fail_silently=False,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\__init__.py", line 92, in send_mail
+    return mail.send()
+           ~~~~~~~~~^^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\message.py", line 307, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\backends\smtp.py", line 128, in send_messages
+    new_conn_created = self.open()
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\backends.py", line 26, in open
+    self.connection = connection_class(
+                      ~~~~~~~~~~~~~~~~^
+        self.host, self.port, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 1022, in __init__
+    SMTP.__init__(self, host, port, local_hostname, timeout,
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  source_address)
+                  ^^^^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+                ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 1029, in _get_socket
+    new_socket = self.context.wrap_socket(new_socket,
+                                          server_hostname=self._host)
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sock=sock,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        session=session
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1076, in _create
+    self.do_handshake()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1372, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ConnectionResetError: [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Watching for file changes with StatReloader
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: Amour
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: Amour
+Envoi de l'email de commande à sonareamusique@gmail.com
+Envoi de l'email de commande à sonareamusique@gmail.com
+Email de commande envoyé avec succès
+Email de commande envoyé avec succès
+Envoi de l'email de confirmation au client: stevanomarion@gmail.com
+Envoi de l'email de confirmation au client: stevanomarion@gmail.com
+Email de confirmation envoyé avec succès
+Email de confirmation envoyé avec succès
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: Amour
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: Amour
+Envoi de l'email de commande à sonareamusique@gmail.com
+Envoi de l'email de commande à sonareamusique@gmail.com
+Erreur lors de l'envoi des emails: [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Traceback (most recent call last):
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\views.py", line 90, in index
+    send_mail(
+    ~~~~~~~~~^
+        f'NOUVELLE COMMANDE SONAREA - {occasion}',
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        fail_silently=False,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\__init__.py", line 92, in send_mail
+    return mail.send()
+           ~~~~~~~~~^^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\message.py", line 307, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\backends\smtp.py", line 128, in send_messages
+    new_conn_created = self.open()
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\backends.py", line 26, in open
+    self.connection = connection_class(
+                      ~~~~~~~~~~~~~~~~^
+        self.host, self.port, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 1022, in __init__
+    SMTP.__init__(self, host, port, local_hostname, timeout,
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  source_address)
+                  ^^^^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+                ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 1029, in _get_socket
+    new_socket = self.context.wrap_socket(new_socket,
+                                          server_hostname=self._host)
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sock=sock,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        session=session
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1076, in _create
+    self.do_handshake()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1372, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ConnectionResetError: [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Erreur lors de l'envoi des emails: [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Traceback (most recent call last):
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\views.py", line 90, in index
+    send_mail(
+    ~~~~~~~~~^
+        f'NOUVELLE COMMANDE SONAREA - {occasion}',
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        fail_silently=False,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\__init__.py", line 92, in send_mail
+    return mail.send()
+           ~~~~~~~~~^^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\message.py", line 307, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\backends\smtp.py", line 128, in send_messages
+    new_conn_created = self.open()
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\backends.py", line 26, in open
+    self.connection = connection_class(
+                      ~~~~~~~~~~~~~~~~^
+        self.host, self.port, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 1022, in __init__
+    SMTP.__init__(self, host, port, local_hostname, timeout,
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  source_address)
+                  ^^^^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+                ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 1029, in _get_socket
+    new_socket = self.context.wrap_socket(new_socket,
+                                          server_hostname=self._host)
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sock=sock,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        session=session
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1076, in _create
+    self.do_handshake()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1372, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ConnectionResetError: [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Watching for file changes with StatReloader
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: Amour
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: Amour
+Envoi de l'email de commande à sonareamusique@gmail.com
+Envoi de l'email de commande à sonareamusique@gmail.com
+Erreur lors de l'envoi des emails: [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Traceback (most recent call last):
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\views.py", line 90, in index
+    send_mail(
+    ~~~~~~~~~^
+        f'NOUVELLE COMMANDE SONAREA - {occasion}',
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        fail_silently=False,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\__init__.py", line 92, in send_mail
+    return mail.send()
+           ~~~~~~~~~^^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\message.py", line 307, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\backends\smtp.py", line 128, in send_messages
+    new_conn_created = self.open()
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\backends.py", line 26, in open
+    self.connection = connection_class(
+                      ~~~~~~~~~~~~~~~~^
+        self.host, self.port, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 1022, in __init__
+    SMTP.__init__(self, host, port, local_hostname, timeout,
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  source_address)
+                  ^^^^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+                ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 1029, in _get_socket
+    new_socket = self.context.wrap_socket(new_socket,
+                                          server_hostname=self._host)
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sock=sock,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        session=session
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1076, in _create
+    self.do_handshake()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1372, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ConnectionResetError: [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Erreur lors de l'envoi des emails: [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Traceback (most recent call last):
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\views.py", line 90, in index
+    send_mail(
+    ~~~~~~~~~^
+        f'NOUVELLE COMMANDE SONAREA - {occasion}',
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        fail_silently=False,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\__init__.py", line 92, in send_mail
+    return mail.send()
+           ~~~~~~~~~^^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\message.py", line 307, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\backends\smtp.py", line 128, in send_messages
+    new_conn_created = self.open()
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\backends.py", line 26, in open
+    self.connection = connection_class(
+                      ~~~~~~~~~~~~~~~~^
+        self.host, self.port, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 1022, in __init__
+    SMTP.__init__(self, host, port, local_hostname, timeout,
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  source_address)
+                  ^^^^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+                ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 1029, in _get_socket
+    new_socket = self.context.wrap_socket(new_socket,
+                                          server_hostname=self._host)
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sock=sock,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        session=session
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1076, in _create
+    self.do_handshake()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1372, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ConnectionResetError: [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+C:\Users\MORIA\Desktop\sona\sonarea\sonarea\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: Amour
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: Amour
+Envoi de l'email de commande à sonareamusique@gmail.com
+Envoi de l'email de commande à sonareamusique@gmail.com
+Email de commande envoyé avec succès
+Email de commande envoyé avec succès
+Envoi de l'email de confirmation au client: stevanomarion@gmail.com
+Envoi de l'email de confirmation au client: stevanomarion@gmail.com
+Erreur lors de l'envoi des emails: [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Traceback (most recent call last):
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\views.py", line 135, in index
+    send_mail(
+    ~~~~~~~~~^
+        'Confirmation de votre commande Sonarea',
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        fail_silently=False,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\__init__.py", line 92, in send_mail
+    return mail.send()
+           ~~~~~~~~~^^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\message.py", line 307, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\backends\smtp.py", line 128, in send_messages
+    new_conn_created = self.open()
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\backends.py", line 26, in open
+    self.connection = connection_class(
+                      ~~~~~~~~~~~~~~~~^
+        self.host, self.port, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 1022, in __init__
+    SMTP.__init__(self, host, port, local_hostname, timeout,
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  source_address)
+                  ^^^^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+                ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 1029, in _get_socket
+    new_socket = self.context.wrap_socket(new_socket,
+                                          server_hostname=self._host)
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sock=sock,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        session=session
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1076, in _create
+    self.do_handshake()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1372, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ConnectionResetError: [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Erreur lors de l'envoi des emails: [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Traceback (most recent call last):
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\views.py", line 135, in index
+    send_mail(
+    ~~~~~~~~~^
+        'Confirmation de votre commande Sonarea',
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        fail_silently=False,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\__init__.py", line 92, in send_mail
+    return mail.send()
+           ~~~~~~~~~^^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\message.py", line 307, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\backends\smtp.py", line 128, in send_messages
+    new_conn_created = self.open()
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\backends.py", line 26, in open
+    self.connection = connection_class(
+                      ~~~~~~~~~~~~~~~~^
+        self.host, self.port, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 1022, in __init__
+    SMTP.__init__(self, host, port, local_hostname, timeout,
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  source_address)
+                  ^^^^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+                ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 1029, in _get_socket
+    new_socket = self.context.wrap_socket(new_socket,
+                                          server_hostname=self._host)
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sock=sock,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        session=session
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1076, in _create
+    self.do_handshake()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1372, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ConnectionResetError: [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+C:\Users\MORIA\Desktop\sona\sonarea\sonarea\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: d
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: d
+Envoi de l'email de commande à sonareamusique@gmail.com
+Envoi de l'email de commande à sonareamusique@gmail.com
+Tentative 1/3 échouée : [Errno 11001] getaddrinfo failed
+Tentative 1/3 échouée : [Errno 11001] getaddrinfo failed
+Tentative 2/3 échouée : [Errno 11001] getaddrinfo failed
+Tentative 2/3 échouée : [Errno 11001] getaddrinfo failed
+Connexion SMTP établie avec succès (tentative 3)
+Connexion SMTP établie avec succès (tentative 3)
+Erreur lors de l'envoi du message : 'EmailMultiAlternatives' object has no attribute 'get_all'
+Erreur lors de l'envoi du message : 'EmailMultiAlternatives' object has no attribute 'get_all'
+Erreur lors de l'envoi des emails: 'EmailMultiAlternatives' object has no attribute 'get_all'
+Traceback (most recent call last):
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\views.py", line 90, in index
+    send_mail(
+    ~~~~~~~~~^
+        f'NOUVELLE COMMANDE SONAREA - {occasion}',
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        fail_silently=False,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\__init__.py", line 92, in send_mail
+    return mail.send()
+           ~~~~~~~~~^^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\message.py", line 307, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\backends.py", line 76, in send_messages
+    sent = self._send(message)
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\backends.py", line 92, in _send
+    return self.connection.send_message(email_message)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 933, in send_message
+    resent = msg.get_all('Resent-Date')
+             ^^^^^^^^^^^
+AttributeError: 'EmailMultiAlternatives' object has no attribute 'get_all'
+Erreur lors de l'envoi des emails: 'EmailMultiAlternatives' object has no attribute 'get_all'
+Traceback (most recent call last):
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\views.py", line 90, in index
+    send_mail(
+    ~~~~~~~~~^
+        f'NOUVELLE COMMANDE SONAREA - {occasion}',
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        fail_silently=False,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\__init__.py", line 92, in send_mail
+    return mail.send()
+           ~~~~~~~~~^^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\message.py", line 307, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\backends.py", line 76, in send_messages
+    sent = self._send(message)
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\backends.py", line 92, in _send
+    return self.connection.send_message(email_message)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 933, in send_message
+    resent = msg.get_all('Resent-Date')
+             ^^^^^^^^^^^
+AttributeError: 'EmailMultiAlternatives' object has no attribute 'get_all'
+C:\Users\MORIA\Desktop\sona\sonarea\sona\backends.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: Amour
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: Amour
+Envoi de l'email de commande à sonareamusique@gmail.com
+Envoi de l'email de commande à sonareamusique@gmail.com
+Tentative 1/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Tentative 1/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Connexion SMTP établie avec succès (tentative 2)
+Connexion SMTP établie avec succès (tentative 2)
+Erreur lors de l'envoi du message : 'EmailMultiAlternatives' object has no attribute 'as_string'
+Erreur lors de l'envoi du message : 'EmailMultiAlternatives' object has no attribute 'as_string'
+Erreur lors de l'envoi des emails: 'EmailMultiAlternatives' object has no attribute 'as_string'
+Traceback (most recent call last):
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\views.py", line 90, in index
+    send_mail(
+    ~~~~~~~~~^
+        f'NOUVELLE COMMANDE SONAREA - {occasion}',
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        fail_silently=False,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\__init__.py", line 92, in send_mail
+    return mail.send()
+           ~~~~~~~~~^^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\message.py", line 307, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\backends.py", line 76, in send_messages
+    sent = self._send(message)
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\backends.py", line 99, in _send
+    email_message.as_string()
+    ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'EmailMultiAlternatives' object has no attribute 'as_string'
+Erreur lors de l'envoi des emails: 'EmailMultiAlternatives' object has no attribute 'as_string'
+Traceback (most recent call last):
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\views.py", line 90, in index
+    send_mail(
+    ~~~~~~~~~^
+        f'NOUVELLE COMMANDE SONAREA - {occasion}',
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        fail_silently=False,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\__init__.py", line 92, in send_mail
+    return mail.send()
+           ~~~~~~~~~^^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\message.py", line 307, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\backends.py", line 76, in send_messages
+    sent = self._send(message)
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\backends.py", line 99, in _send
+    email_message.as_string()
+    ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'EmailMultiAlternatives' object has no attribute 'as_string'
+C:\Users\MORIA\Desktop\sona\sonarea\sona\backends.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: d
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: d
+Envoi de l'email de commande à sonareamusique@gmail.com
+Envoi de l'email de commande à sonareamusique@gmail.com
+Connexion SMTP établie avec succès (tentative 1)
+Connexion SMTP établie avec succès (tentative 1)
+Email de commande envoyé avec succès
+Email de commande envoyé avec succès
+Envoi de l'email de confirmation au client: stevanngwa@gmail.com
+Envoi de l'email de confirmation au client: stevanngwa@gmail.com
+Tentative 1/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Tentative 1/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Connexion SMTP établie avec succès (tentative 2)
+Connexion SMTP établie avec succès (tentative 2)
+Email de confirmation envoyé avec succès
+Email de confirmation envoyé avec succès
+C:\Users\MORIA\Desktop\sona\sonarea\sona\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\MORIA\Desktop\sona\sonarea\sona\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: Amour
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: Amour
+Envoi de l'email de commande à sonareamusique@gmail.com
+Envoi de l'email de commande à sonareamusique@gmail.com
+Tentative 1/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Tentative 1/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Tentative 2/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Tentative 2/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Connexion SMTP établie avec succès (tentative 3)
+Connexion SMTP établie avec succès (tentative 3)
+Email de commande envoyé avec succès
+Email de commande envoyé avec succès
+Envoi de l'email de confirmation au client: stevanomarion@gmail.com
+Envoi de l'email de confirmation au client: stevanomarion@gmail.com
+Connexion SMTP établie avec succès (tentative 1)
+Connexion SMTP établie avec succès (tentative 1)
+Email de confirmation envoyé avec succès
+Email de confirmation envoyé avec succès
+Internal Server Error: /payment
+Traceback (most recent call last):
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\views.py", line 210, in payment
+    options_count = sum([
+        user_data.get('express', False),
+        user_data.get('pdf', False),
+        user_data.get('video', False)
+    ])
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+C:\Users\MORIA\Desktop\sona\sonarea\sona\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\MORIA\Desktop\sona\sonarea\sona\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: Amour
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: Amour
+Envoi de l'email de commande à sonareamusique@gmail.com
+Envoi de l'email de commande à sonareamusique@gmail.com
+Connexion SMTP établie avec succès (tentative 1)
+Connexion SMTP établie avec succès (tentative 1)
+Email de commande envoyé avec succès
+Email de commande envoyé avec succès
+Envoi de l'email de confirmation au client: stevanomarion@gmail.com
+Envoi de l'email de confirmation au client: stevanomarion@gmail.com
+Tentative 1/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Tentative 1/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Tentative 2/3 échouée : [Errno 11001] getaddrinfo failed
+Tentative 2/3 échouée : [Errno 11001] getaddrinfo failed
+Tentative 3/3 échouée : [Errno 11001] getaddrinfo failed
+Tentative 3/3 échouée : [Errno 11001] getaddrinfo failed
+Erreur lors de l'envoi des emails: [Errno 11001] getaddrinfo failed
+Traceback (most recent call last):
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\views.py", line 135, in index
+    send_mail(
+    ~~~~~~~~~^
+        'Confirmation de votre commande Sonarea',
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        fail_silently=False,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\__init__.py", line 92, in send_mail
+    return mail.send()
+           ~~~~~~~~~^^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\message.py", line 307, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\backends.py", line 69, in send_messages
+    new_conn_created = self.open()
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\backends.py", line 41, in open
+    self.connection = connection_class(
+                      ~~~~~~~~~~~~~~~~^
+        self.host,
+        ^^^^^^^^^^
+        self.port,
+        ^^^^^^^^^^
+        **kwargs
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 1022, in __init__
+    SMTP.__init__(self, host, port, local_hostname, timeout,
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  source_address)
+                  ^^^^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+                ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 1028, in _get_socket
+    new_socket = super()._get_socket(host, port, timeout)
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+                                    self.source_address)
+                                    ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 840, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 977, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+Erreur lors de l'envoi des emails: [Errno 11001] getaddrinfo failed
+Traceback (most recent call last):
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\views.py", line 135, in index
+    send_mail(
+    ~~~~~~~~~^
+        'Confirmation de votre commande Sonarea',
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        fail_silently=False,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\__init__.py", line 92, in send_mail
+    return mail.send()
+           ~~~~~~~~~^^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\message.py", line 307, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\backends.py", line 69, in send_messages
+    new_conn_created = self.open()
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\backends.py", line 41, in open
+    self.connection = connection_class(
+                      ~~~~~~~~~~~~~~~~^
+        self.host,
+        ^^^^^^^^^^
+        self.port,
+        ^^^^^^^^^^
+        **kwargs
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 1022, in __init__
+    SMTP.__init__(self, host, port, local_hostname, timeout,
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  source_address)
+                  ^^^^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+                ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 1028, in _get_socket
+    new_socket = super()._get_socket(host, port, timeout)
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+                                    self.source_address)
+                                    ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 840, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 977, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+Watching for file changes with StatReloader
+Not Found: /favicon.ico
+Watching for file changes with StatReloader
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: Amour
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: Amour
+Envoi de l'email de commande à sonareamusique@gmail.com
+Envoi de l'email de commande à sonareamusique@gmail.com
+Tentative 1/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Tentative 1/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Tentative 2/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Tentative 2/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Tentative 3/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Tentative 3/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Erreur lors de l'envoi des emails: [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Traceback (most recent call last):
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\views.py", line 90, in index
+    send_mail(
+    ~~~~~~~~~^
+        f'NOUVELLE COMMANDE SONAREA - {occasion}',
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        fail_silently=False,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\__init__.py", line 92, in send_mail
+    return mail.send()
+           ~~~~~~~~~^^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\message.py", line 307, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\backends.py", line 69, in send_messages
+    new_conn_created = self.open()
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\backends.py", line 41, in open
+    self.connection = connection_class(
+                      ~~~~~~~~~~~~~~~~^
+        self.host,
+        ^^^^^^^^^^
+        self.port,
+        ^^^^^^^^^^
+        **kwargs
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 1022, in __init__
+    SMTP.__init__(self, host, port, local_hostname, timeout,
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  source_address)
+                  ^^^^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+                ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 1029, in _get_socket
+    new_socket = self.context.wrap_socket(new_socket,
+                                          server_hostname=self._host)
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sock=sock,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        session=session
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1076, in _create
+    self.do_handshake()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1372, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ConnectionResetError: [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Erreur lors de l'envoi des emails: [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Traceback (most recent call last):
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\views.py", line 90, in index
+    send_mail(
+    ~~~~~~~~~^
+        f'NOUVELLE COMMANDE SONAREA - {occasion}',
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        fail_silently=False,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\__init__.py", line 92, in send_mail
+    return mail.send()
+           ~~~~~~~~~^^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\message.py", line 307, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\backends.py", line 69, in send_messages
+    new_conn_created = self.open()
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\backends.py", line 41, in open
+    self.connection = connection_class(
+                      ~~~~~~~~~~~~~~~~^
+        self.host,
+        ^^^^^^^^^^
+        self.port,
+        ^^^^^^^^^^
+        **kwargs
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 1022, in __init__
+    SMTP.__init__(self, host, port, local_hostname, timeout,
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  source_address)
+                  ^^^^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+                ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 1029, in _get_socket
+    new_socket = self.context.wrap_socket(new_socket,
+                                          server_hostname=self._host)
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sock=sock,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        session=session
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1076, in _create
+    self.do_handshake()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1372, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ConnectionResetError: [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Watching for file changes with StatReloader
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: Amour
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: Amour
+Envoi de l'email de commande à sonareamusique@gmail.com
+Envoi de l'email de commande à sonareamusique@gmail.com
+Connexion SMTP établie avec succès (tentative 1)
+Connexion SMTP établie avec succès (tentative 1)
+Email de commande envoyé avec succès
+Email de commande envoyé avec succès
+Envoi de l'email de confirmation au client: ariontech24@gmail.com
+Envoi de l'email de confirmation au client: ariontech24@gmail.com
+Tentative 1/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Tentative 1/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Tentative 2/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Tentative 2/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Connexion SMTP établie avec succès (tentative 3)
+Connexion SMTP établie avec succès (tentative 3)
+Email de confirmation envoyé avec succès
+Email de confirmation envoyé avec succès
+Watching for file changes with StatReloader
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: Amour
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: Amour
+Envoi de l'email de commande à sonareamusique@gmail.com
+Envoi de l'email de commande à sonareamusique@gmail.com
+Tentative 1/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Tentative 1/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Connexion SMTP établie avec succès (tentative 2)
+Connexion SMTP établie avec succès (tentative 2)
+Email de commande envoyé avec succès
+Email de commande envoyé avec succès
+Envoi de l'email de confirmation au client: ariontech24@gmail.com
+Envoi de l'email de confirmation au client: ariontech24@gmail.com
+Tentative 1/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Tentative 1/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Connexion SMTP établie avec succès (tentative 2)
+Connexion SMTP établie avec succès (tentative 2)
+Email de confirmation envoyé avec succès
+Email de confirmation envoyé avec succès
+Watching for file changes with StatReloader
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: mariage
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: mariage
+Envoi de l'email de commande à sonareamusique@gmail.com
+Envoi de l'email de commande à sonareamusique@gmail.com
+Tentative 1/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Tentative 1/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Connexion SMTP établie avec succès (tentative 2)
+Connexion SMTP établie avec succès (tentative 2)
+Email de commande envoyé avec succès
+Email de commande envoyé avec succès
+Envoi de l'email de confirmation au client: ariontech24@gmail.com
+Envoi de l'email de confirmation au client: ariontech24@gmail.com
+Tentative 1/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Tentative 1/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Connexion SMTP établie avec succès (tentative 2)
+Connexion SMTP établie avec succès (tentative 2)
+Email de confirmation envoyé avec succès
+Email de confirmation envoyé avec succès
+Watching for file changes with StatReloader
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: MARIAGE
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: MARIAGE
+Envoi de l'email de commande à sonareamusique@gmail.com
+Envoi de l'email de commande à sonareamusique@gmail.com
+Tentative 1/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Tentative 1/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Tentative 2/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Tentative 2/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Connexion SMTP établie avec succès (tentative 3)
+Connexion SMTP établie avec succès (tentative 3)
+Email de commande envoyé avec succès
+Email de commande envoyé avec succès
+Envoi de l'email de confirmation au client: stevanomarion@gmail.com
+Envoi de l'email de confirmation au client: stevanomarion@gmail.com
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: MARIAGE
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: MARIAGE
+Envoi de l'email de commande à sonareamusique@gmail.com
+Envoi de l'email de commande à sonareamusique@gmail.com
+Tentative 1/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Tentative 1/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Tentative 1/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Tentative 1/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Tentative 2/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Tentative 2/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Tentative 2/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Tentative 2/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Tentative 3/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Tentative 3/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Erreur lors de l'envoi des emails: [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Traceback (most recent call last):
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\views.py", line 135, in index
+    send_mail(
+    ~~~~~~~~~^
+        'Confirmation de votre commande Sonarea',
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        fail_silently=False,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\__init__.py", line 92, in send_mail
+    return mail.send()
+           ~~~~~~~~~^^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\message.py", line 307, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\backends.py", line 69, in send_messages
+    new_conn_created = self.open()
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\backends.py", line 41, in open
+    self.connection = connection_class(
+                      ~~~~~~~~~~~~~~~~^
+        self.host,
+        ^^^^^^^^^^
+        self.port,
+        ^^^^^^^^^^
+        **kwargs
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 1022, in __init__
+    SMTP.__init__(self, host, port, local_hostname, timeout,
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  source_address)
+                  ^^^^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+                ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 1029, in _get_socket
+    new_socket = self.context.wrap_socket(new_socket,
+                                          server_hostname=self._host)
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sock=sock,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        session=session
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1076, in _create
+    self.do_handshake()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1372, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ConnectionResetError: [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Erreur lors de l'envoi des emails: [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Traceback (most recent call last):
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\views.py", line 135, in index
+    send_mail(
+    ~~~~~~~~~^
+        'Confirmation de votre commande Sonarea',
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        fail_silently=False,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\__init__.py", line 92, in send_mail
+    return mail.send()
+           ~~~~~~~~~^^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\message.py", line 307, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\backends.py", line 69, in send_messages
+    new_conn_created = self.open()
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\backends.py", line 41, in open
+    self.connection = connection_class(
+                      ~~~~~~~~~~~~~~~~^
+        self.host,
+        ^^^^^^^^^^
+        self.port,
+        ^^^^^^^^^^
+        **kwargs
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 1022, in __init__
+    SMTP.__init__(self, host, port, local_hostname, timeout,
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  source_address)
+                  ^^^^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+                ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 1029, in _get_socket
+    new_socket = self.context.wrap_socket(new_socket,
+                                          server_hostname=self._host)
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sock=sock,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        session=session
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1076, in _create
+    self.do_handshake()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1372, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ConnectionResetError: [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Tentative 3/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Tentative 3/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Erreur lors de l'envoi des emails: [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Traceback (most recent call last):
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\views.py", line 90, in index
+    send_mail(
+    ~~~~~~~~~^
+        f'NOUVELLE COMMANDE SONAREA - {occasion}',
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        fail_silently=False,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\__init__.py", line 92, in send_mail
+    return mail.send()
+           ~~~~~~~~~^^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\message.py", line 307, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\backends.py", line 69, in send_messages
+    new_conn_created = self.open()
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\backends.py", line 41, in open
+    self.connection = connection_class(
+                      ~~~~~~~~~~~~~~~~^
+        self.host,
+        ^^^^^^^^^^
+        self.port,
+        ^^^^^^^^^^
+        **kwargs
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 1022, in __init__
+    SMTP.__init__(self, host, port, local_hostname, timeout,
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  source_address)
+                  ^^^^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+                ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 1029, in _get_socket
+    new_socket = self.context.wrap_socket(new_socket,
+                                          server_hostname=self._host)
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sock=sock,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        session=session
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1076, in _create
+    self.do_handshake()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1372, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ConnectionResetError: [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Erreur lors de l'envoi des emails: [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Traceback (most recent call last):
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\views.py", line 90, in index
+    send_mail(
+    ~~~~~~~~~^
+        f'NOUVELLE COMMANDE SONAREA - {occasion}',
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        fail_silently=False,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\__init__.py", line 92, in send_mail
+    return mail.send()
+           ~~~~~~~~~^^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\message.py", line 307, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\backends.py", line 69, in send_messages
+    new_conn_created = self.open()
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\backends.py", line 41, in open
+    self.connection = connection_class(
+                      ~~~~~~~~~~~~~~~~^
+        self.host,
+        ^^^^^^^^^^
+        self.port,
+        ^^^^^^^^^^
+        **kwargs
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 1022, in __init__
+    SMTP.__init__(self, host, port, local_hostname, timeout,
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  source_address)
+                  ^^^^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+                ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 1029, in _get_socket
+    new_socket = self.context.wrap_socket(new_socket,
+                                          server_hostname=self._host)
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sock=sock,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        session=session
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1076, in _create
+    self.do_handshake()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1372, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ConnectionResetError: [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: MARIAGE
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: MARIAGE
+Envoi de l'email de commande à sonareamusique@gmail.com
+Envoi de l'email de commande à sonareamusique@gmail.com
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: MARIAGE
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: MARIAGE
+Envoi de l'email de commande à sonareamusique@gmail.com
+Envoi de l'email de commande à sonareamusique@gmail.com
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: MARIAGE
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: MARIAGE
+Envoi de l'email de commande à sonareamusique@gmail.com
+Envoi de l'email de commande à sonareamusique@gmail.com
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: MARIAGE
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: MARIAGE
+Envoi de l'email de commande à sonareamusique@gmail.com
+Envoi de l'email de commande à sonareamusique@gmail.com
+Tentative 1/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Tentative 1/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Tentative 1/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Tentative 1/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Tentative 1/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Tentative 1/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Tentative 1/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Tentative 1/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Connexion SMTP établie avec succès (tentative 2)
+Connexion SMTP établie avec succès (tentative 2)
+Connexion SMTP établie avec succès (tentative 2)
+Connexion SMTP établie avec succès (tentative 2)
+Email de commande envoyé avec succès
+Email de commande envoyé avec succès
+Envoi de l'email de confirmation au client: stevanomarion@gmail.com
+Envoi de l'email de confirmation au client: stevanomarion@gmail.com
+Email de commande envoyé avec succès
+Email de commande envoyé avec succès
+Envoi de l'email de confirmation au client: stevanomarion@gmail.com
+Envoi de l'email de confirmation au client: stevanomarion@gmail.com
+Connexion SMTP établie avec succès (tentative 1)
+Connexion SMTP établie avec succès (tentative 1)
+Email de confirmation envoyé avec succès
+Email de confirmation envoyé avec succès
+Tentative 2/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Tentative 2/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Tentative 2/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Tentative 2/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Tentative 1/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Tentative 1/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Connexion SMTP établie avec succès (tentative 2)
+Connexion SMTP établie avec succès (tentative 2)
+Connexion SMTP établie avec succès (tentative 3)
+Connexion SMTP établie avec succès (tentative 3)
+Email de confirmation envoyé avec succès
+Email de confirmation envoyé avec succès
+Email de commande envoyé avec succès
+Email de commande envoyé avec succès
+Envoi de l'email de confirmation au client: stevanomarion@gmail.com
+Envoi de l'email de confirmation au client: stevanomarion@gmail.com
+Tentative 3/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Tentative 3/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Erreur lors de l'envoi des emails: [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Traceback (most recent call last):
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\views.py", line 90, in index
+    send_mail(
+    ~~~~~~~~~^
+        f'NOUVELLE COMMANDE SONAREA - {occasion}',
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        fail_silently=False,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\__init__.py", line 92, in send_mail
+    return mail.send()
+           ~~~~~~~~~^^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\message.py", line 307, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\backends.py", line 69, in send_messages
+    new_conn_created = self.open()
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\backends.py", line 41, in open
+    self.connection = connection_class(
+                      ~~~~~~~~~~~~~~~~^
+        self.host,
+        ^^^^^^^^^^
+        self.port,
+        ^^^^^^^^^^
+        **kwargs
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 1022, in __init__
+    SMTP.__init__(self, host, port, local_hostname, timeout,
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  source_address)
+                  ^^^^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+                ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 1029, in _get_socket
+    new_socket = self.context.wrap_socket(new_socket,
+                                          server_hostname=self._host)
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sock=sock,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        session=session
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1076, in _create
+    self.do_handshake()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1372, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ConnectionResetError: [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Erreur lors de l'envoi des emails: [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Traceback (most recent call last):
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\views.py", line 90, in index
+    send_mail(
+    ~~~~~~~~~^
+        f'NOUVELLE COMMANDE SONAREA - {occasion}',
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        fail_silently=False,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\__init__.py", line 92, in send_mail
+    return mail.send()
+           ~~~~~~~~~^^
+  File "C:\Users\MORIA\Desktop\sona\virt\Lib\site-packages\django\core\mail\message.py", line 307, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\backends.py", line 69, in send_messages
+    new_conn_created = self.open()
+  File "C:\Users\MORIA\Desktop\sona\sonarea\sona\backends.py", line 41, in open
+    self.connection = connection_class(
+                      ~~~~~~~~~~~~~~~~^
+        self.host,
+        ^^^^^^^^^^
+        self.port,
+        ^^^^^^^^^^
+        **kwargs
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 1022, in __init__
+    SMTP.__init__(self, host, port, local_hostname, timeout,
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  source_address)
+                  ^^^^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+                ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 1029, in _get_socket
+    new_socket = self.context.wrap_socket(new_socket,
+                                          server_hostname=self._host)
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sock=sock,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        session=session
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1076, in _create
+    self.do_handshake()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\MORIA\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1372, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ConnectionResetError: [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Tentative 1/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Tentative 1/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Connexion SMTP établie avec succès (tentative 2)
+Connexion SMTP établie avec succès (tentative 2)
+Email de confirmation envoyé avec succès
+Email de confirmation envoyé avec succès
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: MARIAGE
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: MARIAGE
+Envoi de l'email de commande à sonareamusique@gmail.com
+Envoi de l'email de commande à sonareamusique@gmail.com
+Tentative 1/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Tentative 1/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Connexion SMTP établie avec succès (tentative 2)
+Connexion SMTP établie avec succès (tentative 2)
+Email de commande envoyé avec succès
+Email de commande envoyé avec succès
+Envoi de l'email de confirmation au client: stevanomarion@gmail.com
+Envoi de l'email de confirmation au client: stevanomarion@gmail.com
+Connexion SMTP établie avec succès (tentative 1)
+Connexion SMTP établie avec succès (tentative 1)
+Email de confirmation envoyé avec succès
+Email de confirmation envoyé avec succès
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: MARIAGE
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: MARIAGE
+Envoi de l'email de commande à sonareamusique@gmail.com
+Envoi de l'email de commande à sonareamusique@gmail.com
+Tentative 1/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Tentative 1/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: MARIAGE
+Tentative d'envoi d'email pour une nouvelle commande - Occasion: MARIAGE
+Envoi de l'email de commande à sonareamusique@gmail.com
+Envoi de l'email de commande à sonareamusique@gmail.com
+Connexion SMTP établie avec succès (tentative 1)
+Connexion SMTP établie avec succès (tentative 1)
+Connexion SMTP établie avec succès (tentative 2)
+Connexion SMTP établie avec succès (tentative 2)
+Email de commande envoyé avec succès
+Email de commande envoyé avec succès
+Envoi de l'email de confirmation au client: stevanomarion@gmail.com
+Envoi de l'email de confirmation au client: stevanomarion@gmail.com
+Email de commande envoyé avec succès
+Email de commande envoyé avec succès
+Envoi de l'email de confirmation au client: stevanomarion@gmail.com
+Envoi de l'email de confirmation au client: stevanomarion@gmail.com
+Tentative 1/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Tentative 1/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Tentative 1/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Tentative 1/3 échouée : [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+Connexion SMTP établie avec succès (tentative 2)
+Connexion SMTP établie avec succès (tentative 2)
+Connexion SMTP établie avec succès (tentative 2)
+Connexion SMTP établie avec succès (tentative 2)
+Email de confirmation envoyé avec succès
+Email de confirmation envoyé avec succès
+Email de confirmation envoyé avec succès
+Email de confirmation envoyé avec succès
+C:\Users\MORIA\Desktop\sona\sonarea\sona\views.py changed, reloading.
+Watching for file changes with StatReloader

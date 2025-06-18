@@ -1,0 +1,38 @@
+{% extends 'sona/base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow">
+                <div class="card-body text-center">
+                    <div class="mb-4">
+                        <i class="fas fa-check-circle text-success" style="font-size: 4rem;"></i>
+                    </div>
+                    <h2 class="card-title mb-4">Paiement Réussi !</h2>
+                    <p class="lead">Merci pour votre paiement. Votre commande a été confirmée.</p>
+                    
+                    <div class="alert alert-info">
+                        <h5>Prochaines étapes :</h5>
+                        <ol class="text-start">
+                            <li>Vous recevrez un email de confirmation dans quelques minutes</li>
+                            <li>Notre équipe commencera à travailler sur votre chanson</li>
+                            <li>Nous vous contacterons si nous avons besoin d'informations supplémentaires</li>
+                        </ol>
+                    </div>
+
+                    <div class="mt-4">
+                        <p>Si vous avez des questions, n'hésitez pas à nous contacter :</p>
+                        <p><strong>Email :</strong> sonareamusique@gmail.com</p>
+                        <p><strong>Téléphone :</strong> +237 6XX XXX XXX</p>
+                    </div>
+
+                    <div class="mt-4">
+                        <a href="{% url 'sona:index' %}" class="btn btn-primary">Retour à l'accueil</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 

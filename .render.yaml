@@ -1,9 +1,9 @@
 services:
   - type: web
-    name: sona-app
+    name: django-app
     env: python
     buildCommand: "pip install -r requirements.txt"
-    startCommand: "gunicorn sonarea.wsgi:application"
+    startCommand: "gunicorn sona.wsgi:application"
     envVars:
       - key: DJANGO_SETTINGS_MODULE
-        value: sonarea.settings
+        value: sona.settings

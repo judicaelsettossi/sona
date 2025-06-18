@@ -1,1 +1,1 @@
-web: gunicorn sonarea.wsgi:application
+web: gunicorn sona.wsgi:application
